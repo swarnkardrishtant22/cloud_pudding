@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Pudding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="bcgbox">
+        <aside>
+            <h1>Cloud <br>Pudding</h1>
+            <p>Is it a good day to <br> do groceries today?</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="forecast.html">Forecast</a>
+                <a href="saved.html">Saved</a>
+                <a href="recent.html">Recent</a>
+            </nav>
+            <p>No matter the weather, a little sunshine finds its way to you.</p>
+        </aside>
+        <section>
+            <div class="search-bar">
+                <i class="ri-search-line"></i>
+                <input type="text" id="cityInput" placeholder="Search for a city...">
+                <button type="button" id="searchBtn">Search</button>
+            </div>
+            <div class="main-weather">
+                <div class="weather-content">
+                    <div class="temperature-row">
+                        <h1 id="temperature">29°</h1>
+                        <div class="unit-switch">
+                            <span id="celsius" class="active-unit">°C</span>
+                            <span id="fahrenheit">°F</span>
+                        </div>
+                    </div>
+                    <h2 id="cityName">Roosevelt Island,<br>New York, NY</h2>
+                    <p class="weather-condition" id="condition">SCATTERED CLOUDS</p>
+                </div>
+            </div>
+            <div class="lower">
+                <div id="box1">
+                    <i class="ri-drop-line"></i>
+                    <div class="inner">
+                        <h3>Humidity</h3>
+                        <h2 id="humidity">65%</h2>
+                    </div>
+                </div>
+                <div id="box2">
+                    <i class="ri-windy-line"></i>
+                    <div class="inner">
+                        <h3>Wind Speed</h3>
+                        <h2 id="windSpeed">12 km/h</h2>
+                    </div>
+                </div>
+                <div id="box3">
+                    <i class="ri-temp-hot-line"></i>
+                    <div class="inner">
+                        <h3>Feels Like</h3>
+                        <h2 id="feelsLike">31°</h2>
+                    </div>
+                </div>
+                <div id="box4">
+                    <i class="ri-sun-line"></i>
+                    <div class="inner">
+                        <h3>UV Index</h3>
+                        <h2 id="uvIndex">5</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
